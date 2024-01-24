@@ -1,12 +1,125 @@
-.main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    background-color: #141414;
-    z-index: 1;
-    width: 100%;
-    max-width: 2000px;
-    padding: 0 50px; 
+/* Add a black background color to the top navigation bar */
+.topbar {
+    overflow: hidden;
+    background-color: #62a6de;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topbar h1 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* Change the color of links on hover */
+  .topbar a:hover {
+    background-color: #5a98cb;
+    color: black;
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topbar a.active {
+    background-color: #2196F3;
+    color: white;
+  }
+  body {
+    margin: 0;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Style the search box inside the navigation bar */
+
+  .searchbar {
+    margin: 0 0 0 500px;
+  }
+
+
+  .searchbar input[type=text] {
+    float:left;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+  .searchbar button {
+    float:left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #6fbeff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+.filterdrop select {
+  float:left;
+  height: 35px;
+  margin-top: 8px;
+  margin-right: 6px;
+  font-size: 17px;
+}
+
+  .box_index {
+    border-radius: 7px;
+    margin: 25px 100px 25px 100px;
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #161616;
+    background-color: white;
+    text-align: left;
+}
+
+  .box {
+    border-radius: 7px;
+    margin: 25px 100px 25px 100px;
+    padding: 0 20px 20px 20px;
+    width: 50%;
+    border: 1px solid #161616;
+    background-color: white;
+    text-align: left;
+}
+
+.box input {
+  width: 700px;
+  font-size: 20px;
+}
+
+.box p {
+  font-size: 20px;
+}
+
+.login {
+  border-radius: 7px;
+  margin: 10% 10% 0 35%;
+  width: 400px;
+  border: 1px solid #161616;
+  font-size: 20px;
+  padding: 20px 20px 20px 74px;
+  background-color: white;
+}
+
+.login input{
+  margin-bottom: 20px;
+}
+
+.login label{
+  margin-top: 15px;
+  margin-right: 5px;
+  font-size: 17px;
 }

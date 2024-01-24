@@ -1,66 +1,107 @@
 <!DOCTYPE html>
 <head>
-	<title>Job Finder Website</title>
+	<title>Inclusive Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <input type="text" placeholder="Search...">
+    <div class="topbar">
+        <h1 style="margin-left: 20px;">Inclusive Jobs <i>Only your skills matter</i></h1>
+        <a href="index.html">Home</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
     </div>
-    <p>
+    
+    <div class="searchbar">
+        <h2 style="margin-left: 130px;">Search for jobs</h2>
+        <div class="filterdrop">
+        <label for="filter" style="float: left;margin-top: 15px;margin-right: 5px;font-size: 17px;">Search By:</label>
+        <select name="filter" id="filter">
+          <option value="job">Job Title</option>
+          <option value="skill">Skill</option>
+          <option value="company">Company</option>
+          <option value="location">Location</option>
+        </select>
+        </div>
+    <form action="search.html"> <!-- TODO: change website -->
+        <input type="text" placeholder="Search..." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="box_index">
+        <a href="createjob.html">Make a job listing</a>
+    </div>
+    
+    <div class="box_index">
+        <a href="mentor.html">Find a mentor</a>
+    </div>
+
+    <div class="box_index">
+        <a href="teaching.html">Teaching</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <p style="display:none">
         <br>**search page**<br>
-        filters
-        Job title 
-        Company name
-        Job description
-        Skills
-        Benefits
-        Location
-        Contacts
-        Reviews
+        filters;
+        Job title ;
+        Company name;
+        Job description;
+        Skills;
+        Benefits;
+        Location;
+        Contacts;
+        Reviews;
         Inclusivity score
 
         <br>** Sign up (applicants) ** <br>
-        skills you have
-        Do you have any special needs
-        Jobs you want
+        skills you have;
+        Do you have any special needs;
+        Jobs you want;
         qualifications, certifications
 
         <br>** Sign up (employers) **<br>
-        company name
-        description/ what you do
-        Benefits
+        company name;
+        description/ what you do;
+        Benefits;
         location(s)
 
         <br>** make a job listing **<br>
-        job title
-        location
-        skills needed
-        positions open
-        experience needed (entry, advanced, senior etc)
-        contact info for external applications
+        job title;
+        location;
+        skills needed;
+        positions open;
+        experience needed (entry, advanced, senior etc);
+        contact info for external applications;
         contract type (part time, full time, etc)
 
         <br>** Mentorship **<br>
-        Sign up for mentors and mentees
-        Mentor search
-        Mentor chat
+        Sign up for mentors and mentees;
+        Mentor search;
+        Mentor chat;
         ML powered mentor matchmaking
 
         <br>** Teaching / training **<br>
-        Teacher sign up
-        Skills that are being taught
-        Forum for asking questions
-        Videos (with ranking/likes)
+        Teacher sign up;
+        Skills that are being taught;
+        Forum for asking questions;
+        Videos (with ranking/likes);
         FAQ's
 
         <br>** About Us **<br>
-        Slogan
-        What we do 
-        Motivation/ mission
-        Core values
+        Slogan;
+        What we do;
+        Motivation/ mission;
+        Core values;
         Staff
     </p>
+
 </body>
 </html>
